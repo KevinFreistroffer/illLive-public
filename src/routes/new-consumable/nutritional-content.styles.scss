@@ -1,0 +1,52 @@
+.nutritional-content {
+  h2 {
+    text-align: center;
+    font-size: 3rem !important;
+  }
+  .description {
+    text-align: center;
+    color: #999999;
+  }
+
+  .controls {
+    button {
+    }
+  }
+  .content {
+    .input {
+      margin: 1rem auto;
+    }
+  }
+}
+
+.calorie-input {
+  display: none !important;
+}
+
+.content-appear {
+  opacity: 0.01;
+}
+
+.content-enter {
+  opacity: 0.01;
+}
+
+.content-leave {
+  opacity: 1;
+}
+
+.ant-input-wrapper {
+  .ant-input-group-addon {
+    width: 10rem;
+    min-width: 10rem;
+  }
+
+  span,
+  input {
+    padding: 1rem;
+  }
+
+  input {
+    height: auto;
+  }
+}

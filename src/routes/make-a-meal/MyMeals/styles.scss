@@ -1,0 +1,229 @@
+.my-meals {
+  height: 100%;
+  color: #ffffff;
+
+  .meals-select-buttons-container {
+    height: auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0;
+  }
+
+  .meals-select-container {
+    select {
+      width: 20rem;
+      max-width: 20rem;
+      padding: 0.5rem;
+      margin: 0;
+      font-size: 0.9rem;
+      border: none;
+      color: #333;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.56);
+    }
+  }
+
+  .buttons {
+    width: 17rem;
+
+    button {
+      background-color: rgb(39, 44, 47);
+      transition: box-shadow 0.05s linear;
+    }
+  }
+
+  .no-meals-text {
+    display: block;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    color: #000;
+  }
+
+  .meals-container {
+    max-height: 50rem;
+    overflow-y: auto;
+
+    .meal {
+      width: 100%;
+      padding: 1rem;
+      margin: 1vh auto;
+      border: 1px solid #e4e4e4;
+      cursor: pointer;
+      background: #f9f9f9;
+
+      &.meal-half-width {
+        width: 40% !important;
+      }
+
+      &.meal-third-width {
+        width: 30% !important;
+      }
+
+      &.meal-selected {
+        opacity: 1 !important;
+      }
+
+      &:hover {
+        > .fa {
+          display: block;
+          color: #333333;
+        }
+      }
+
+      &.meal-selected {
+      }
+
+      &.meal-set-name {
+        text-decoration: underline;
+      }
+
+      .fa {
+        display: block;
+      }
+
+      .meal-header {
+        position: relative;
+        padding-top: 0;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(39, 56, 62, 0.05);
+
+        .fa {
+          color: #333;
+          font-size: 2rem;
+        }
+
+        .meal-header-meal-name {
+          width: auto;
+          padding: 0.5rem 3rem 0.5rem 0.5rem;
+          font-size: 1.3rem;
+          color: rgba(0, 0, 0, 0.75);
+          position: relative;
+          overflow: visible;
+
+          .meal-name-text {
+            .selected-meal {
+              font-weight: bold;
+            }
+          }
+
+          > div .edit {
+            display: inline-block;
+            position: absolute;
+            top: 0rem;
+            right: 0;
+            opacity: 0;
+            z-index: 100;
+            color: #999;
+            font-weight: 100;
+
+            &.show-edit {
+              opacity: 1 !important;
+              right: -5rem !important;
+            }
+          }
+
+          &:hover {
+            > div .edit {
+              right: -5rem;
+              opacity: 1;
+            }
+          }
+        }
+
+        .set-meal-name,
+        .set-meal-name-input {
+          width: 95%;
+          color: #000;
+        }
+
+        .set-meal-name {
+          color: rgba(0, 0, 0, 0.81);
+          font-size: 0.8rem;
+          width: 100%;
+          display: block;
+          margin: 0;
+        }
+
+        .set-meal-name-input-container {
+          position: relative;
+
+          .set-meal-name-input {
+            width: 85%;
+            border: none;
+            padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 0.8rem;
+            border-radius: 0.1rem;
+          }
+
+          .set-meal-name-controls {
+            width: 5rem;
+            padding: 0.5rem 0.25rem;
+            font-size: 0.7rem;
+            color: burlywood;
+
+            > div {
+              &:hover {
+                color: #c3975e;
+              }
+            }
+          }
+        }
+
+        .fa-trash {
+          font-size: 1rem;
+          color: rgba(244, 67, 54, 0.34);
+
+          &:hover {
+            color: rgba(244, 67, 54, 0.9);
+          }
+        }
+      }
+
+      .meal-main {
+        overflow: hidden;
+        color: black;
+
+        .no-items-in-the-meal {
+          display: block;
+          width: 100%;
+          padding: 0.5rem 0;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+
+        .meal-item {
+          color: #333;
+
+          .meal-item-row {
+            width: 100%;
+            padding: 0.25rem 0.5rem;
+            margin: 0.25rem 0;
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+          }
+
+          .meal-item-name {
+            color: #333;
+          }
+        }
+      }
+
+      table {
+        width: 100%;
+        font-size: 0.8rem;
+        table-layout: fixed;
+
+        thead {
+          td {
+            color: #fff;
+          }
+        }
+
+        th {
+          font-weight: 700;
+          width: 25%;
+        }
+      }
+    }
+  }
+}

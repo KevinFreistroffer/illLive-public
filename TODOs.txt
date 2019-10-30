@@ -1,0 +1,21 @@
+foodDrink to consumable
+
+When refreshing /signin, it auto signs in 
+and a reducer .errors is not iterable message
+
+Think about store.clear() / when to clear all sessions / should I clear all sessions? / 
+
+confirmAccount is used to sign users up.
+confirmAccount can be used for reseting a users password as it's the same process
+of validating a token and confirming. 
+Think about creaklefal the logic to sdisdl in an IF ELSE!
+
+When on the confirm account page, I signed out and it displayed a new message saying "There was an errors
+confirming your account" etc.... Make it so that message doens't show on sign out.
+
+The returned user fromt he server the values within it think what needs to be returned
+Maybe just accountConfirmed and similiar non threatening values instead of their
+email and username and personal things.
+
+The measurements [], created when creating a new user, should be on client side, passed as measurements to Measurements, passed
+as a user property when creating a new user.

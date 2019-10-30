@@ -1,0 +1,230 @@
+.register {
+  padding-top: 3.5rem;
+
+  .view-title,
+  h1.view-title-mobile {
+    font-size: 9vw;
+    font-weight: bold;
+    color: #495057;
+    font-weight: bold;
+  }
+
+  .view-title {
+    display: none;
+  }
+  .mobile-view-title {
+    display: none;
+  }
+
+  .h1-form-container {
+    width: 100%;
+    max-width: 19rem;
+    padding: 2rem;
+    margin: 0 auto 2rem;
+    position: relative;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    box-shadow: none;
+  }
+
+  #register-form {
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+
+    &.display-errors input:invalid {
+      border: 1px solid red;
+    }
+
+    .form-error {
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto 1rem;
+      text-align: center;
+      background-color: #694242;
+      color: red;
+      border-radius: 4px;
+    }
+
+    .form-group {
+      display: block;
+      width: 100%;
+      margin-bottom: 1.4rem;
+      position: relative;
+
+      .form-error-input,
+      .form-error-input:focus {
+        //outline: 1px solid red;
+        border: 1px solid red !important;
+      }
+
+      .form-error-text {
+        position: relative;
+        height: 2.8rem;
+        width: 12.5rem;
+        top: 0.1rem;
+        /* left: 1rem; */
+        padding: 0.6rem;
+        font-size: 0.8rem;
+        color: white;
+        background-color: #ff1714;
+        text-align: center;
+        border-radius: 2px;
+        margin: 0 auto;
+        margin: 1px auto;
+      }
+
+      #email-form-error-text {
+        width: 90%;
+        padding: 0;
+        margin-top: 0.5rem;
+        text-align: left;
+        height: auto !important;
+        background-color: transparent !important;
+        color: #c10f0d !important;
+        box-shadow: none !important;
+        border: none !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      label,
+      input {
+        display: block;
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: left;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-align: left;
+        color: #333;
+        display: none;
+      }
+
+      input {
+        height: 3rem;
+        padding: 0.8rem;
+        color: #333;
+        border: 1px solid #eee;
+        border-radius: 10000rem;
+        background-color: #fff;
+        outline: none;
+      }
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      display: block;
+      padding: 1rem;
+      margin: 0 auto;
+      /*background-color: #333;*/
+      background-color: #00547a;
+      color: #fff;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      border: none;
+      border-radius: 6rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+      cursor: pointer;
+      transition: background-color 0.4s, color 0.3s, border 0.4s;
+
+      &:hover {
+        background-color: #00547a;
+      }
+    }
+
+    .link-to-opposite-form {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 30rem) {
+  .register {
+    // Add to more global style
+  }
+}
+
+@media only screen and (min-width: 33rem) {
+  .register {
+    .mobile-nav-links {
+      display: none;
+    }
+    .mobile-view-title {
+      display: none;
+    }
+    .h1-form-container {
+      max-width: 27rem;
+      background-color: #fff;
+      border-radius: 0.25rem;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+      border: 1px solid #ddd;
+
+      .view-title {
+        display: block;
+        font-size: 2rem;
+      }
+      #register-form {
+        input {
+          padding: 0.6rem 1rem;
+        }
+        .form-error-text {
+          width: 19rem;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+        }
+
+        button {
+          width: 90%;
+        }
+        h6.link-to-opposite-form {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  .register {
+    h1.view-title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 53rem) {
+  .register {
+    .mobile-nav-links {
+      display: none;
+    }
+
+    #register-form {
+      .form-group {
+        .form-error-text {
+          position: absolute;
+          left: 102%;
+          border-radius: 1rem 5rem 5rem 1rem;
+        }
+
+        #email-form-error-text {
+          position: relative !important;
+          left: inherit !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 33rem) and (max-height: 20rem) {
+  .register {
+    .h1-form-container {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const SET_STAY_BOX = "SET_STAY_BOX";

@@ -1,0 +1,4 @@
+module.exports = {
+  FIND_USERS_ERROR: "FIND_USERS_ERROR",
+  SAVED_USER_ERROR: "SAVED_USER_ERROR",
+};

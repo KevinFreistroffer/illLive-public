@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js --trace-sync-io",
+    "test": "jest --watchAll",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "^2.6.9",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "global": "^4.4.0",
+    "helmet": "^3.12.1",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.2.1",
+    "mongo-store": "0.0.2",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1",
+    "nodemailer": "^4.6.4",
+    "nodemon": "^1.19.4",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@shelf/jest-mongodb": "^1.0.0",
+    "babel-jest": "^24.7.1",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "jest": "^24.7.1"
+  }
+}

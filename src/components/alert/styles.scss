@@ -1,0 +1,49 @@
+.alert {
+	display: block;
+	opacity: 1;
+	padding: 1rem;
+	position: fixed;
+	bottom: 0.5rem;
+	right: 2rem;
+	z-index: 999999999 !important;
+    color: #ffffff;
+    width: 50%;
+    margin: 0 auto !important;
+    min-width: 23rem;
+	border-radius: 0;
+	box-shadow: 0 0 4px rgba(0,0,0,0.3);
+	transition: all 1s fade-in-out;
+	animation: fadeInAlert 1s;
+	text-align: center;
+
+	&.warning {
+		background-color: rgba(210, 64, 64, 0.8) !important;
+	}
+	&.info {
+		background-color: rgba(64, 143, 210, 0.8) !important;
+	}
+	/* Should be .success */
+	&.success {
+		background-color: rgba(64, 210, 75, 0.9) !important;
+	}
+	
+	.title {
+		font-size: 1rem;
+		text-align: left;
+		color: #fff;
+	}
+
+	.body {
+		font-size: 0.8rem;
+		text-align: left;
+		color: #fff;
+	}
+
+	.lnr-cross {
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		color: white;
+		font-size: 1rem;
+	}
+}

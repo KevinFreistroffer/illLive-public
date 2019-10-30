@@ -1,0 +1,31 @@
+.stay-box {
+	position: relative;
+	z-index: 8000;
+	width: 100%;
+	padding: 1rem;
+	min-height: 3.5rem;
+	margin: 0 auto;
+	top: 0;
+	background-color: #fff;
+	color: #78b2d6;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.text {
+		width: 90%;
+	}
+
+	.close-stay-box {
+		width: 10%;
+		cursor: pointer;
+		color: #8ed4ff;
+		text-align: right;
+
+		span {
+			font-size: 2rem;
+		}
+	}
+}

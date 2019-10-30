@@ -1,0 +1,59 @@
+.reset-password {
+  padding: 2rem;
+  #headings-and-form-container {
+    max-width: 24rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #ddd;
+
+    h1.view-title {
+      display: block;
+      font-feature-settings: "c2sc";
+      font-variant: small-caps;
+      color: #343a40;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    form {
+      width: 100%;
+      input {
+        padding: 1.6rem 1rem;
+        width: 100%;
+        height: 3rem;
+        color: #333;
+        border: 1px solid #eee;
+        border-radius: 0;
+        background-color: #fff;
+      }
+
+      button {
+        width: 100%;
+        display: block;
+        padding: 1rem;
+        margin: 1.4rem auto 0;
+        background-color: #00547a;
+        color: #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+        cursor: pointer;
+        transition: background-color 0.4s, color 0.3s, border 0.4s;
+      }
+
+      .form-error-text {
+        width: 15.5rem;
+      }
+    }
+  }
+}

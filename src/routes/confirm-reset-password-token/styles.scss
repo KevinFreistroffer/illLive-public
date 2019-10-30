@@ -1,0 +1,20 @@
+.confirm-reset-password-token {
+  a {
+    color: #000000 !important;
+  }
+
+  #invalid-token {
+    h1 {
+    }
+    form {
+      width: 100%;
+      max-width: 20rem;
+
+      input[type="email"] {
+        width: 100%;
+      }
+      div.form-error {
+      }
+    }
+  }
+}

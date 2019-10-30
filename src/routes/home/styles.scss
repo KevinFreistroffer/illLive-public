@@ -1,0 +1,349 @@
+@keyframes pulse1 {
+  0% {
+    background-color: rgba(40, 52, 60, 0.93);
+  }
+
+  30% {
+    background-color: rgba(40, 52, 60, 0.91);
+  }
+
+  100% {
+    background-color: rgba(40, 52, 60, 0.93);
+  }
+}
+
+.home {
+  padding: 0 auto 0 !important;
+  background-color: transparent;
+  background-color: #f7f8fb;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0 !important;
+  background-color: #333;
+  justify-content: flex-start;
+  background-image: url("./ellieelien-1539746-unsplash.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  #home-overlay {
+    padding-top: 12.5vh;
+    height: 100%;
+    min-height: 100%;
+    //background-color: rgba(40, 52, 60, 0.83);
+    animation: pulse1 1s infinite;
+  }
+
+  section {
+    height: auto;
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    padding: 15vh 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.welcome {
+      padding-top: 0;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+
+      h1 {
+        width: 100%;
+        margin: 0;
+        font-size: 10vw;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 0vw;
+        // line-height: 14vw;
+        color: #fff;
+      }
+
+      h2 {
+        margin: 5rem 0 2.5rem;
+      }
+
+      .welcome-buttons {
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          width: 100%;
+          max-width: 14rem;
+          margin: 1% auto;
+          cursor: pointer;
+
+          &:nth-child(1) {
+            margin-bottom: 0.2rem;
+          }
+        }
+      }
+    }
+
+    &.add-vitamins,
+    &.mobile-version {
+      h1,
+      h1 {
+        color: #111;
+      }
+    }
+
+    &.add-vitamins {
+      background-color: #b47b43;
+      background-color: #f9f9f9;
+
+      h1,
+      h2,
+      h3 {
+        max-width: 54rem;
+        text-transform: uppercase;
+        margin: 3rem auto;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 4rem;
+      }
+    }
+
+    &.calculate-your-total {
+      color: #000;
+      background-color: #30463e;
+    }
+    &.mobile-version {
+      padding-bottom: 15rem;
+      background-color: #fff;
+      height: auto;
+      min-height: auto;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 25vh 5%;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      h1 {
+        margin: 0 auto;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0 auto 5%;
+    text-transform: uppercase;
+    color: #3c5543;
+
+    span {
+      display: block;
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+
+  button {
+    position: relative;
+    width: 12rem;
+    padding: 1.2rem 0;
+    margin: 1.25% auto;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #2ebc4f;
+    border: none;
+    transition: background-color 0.1s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2cb34b;
+    }
+  }
+}
+
+@media only screen and (min-width: 30rem) {
+  .home {
+    section.welcome {
+      //width: 36rem;
+
+      h1 {
+        font-size: 3rem;
+        span {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 35rem) {
+  .home {
+    background-image: url("./ellieelien-1539746-unsplash.jpg") !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: cover;
+
+    section {
+      &.welcome {
+        //width: 36rem;
+        align-items: flex-start;
+        //width: 48rem;
+        height: 40rem;
+        padding-bottom: 8rem;
+      }
+    }
+
+    h1 {
+      font-weight: bold;
+      br {
+        display: none;
+      }
+    }
+
+    .welcomebuttons {
+      max-width: 29rem;
+      margin: 0 auto;
+
+      button {
+        max-width: 13rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .home {
+    section.welcome {
+      width: 39rem;
+
+      h1 {
+        font-size: 3rem;
+        text-align: left;
+
+        span {
+          text-align: left;
+        }
+      }
+      .welcome-buttons {
+        justify-content: flex-start;
+        margin-left: 0;
+
+        button {
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  .home {
+    section {
+      &.welcome {
+        .welcome-buttons {
+          flex-direction: row;
+
+          button {
+            width: 47%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 55rem) {
+  .home {
+    section.welcome {
+      h1 {
+        font-size: 3rem;
+        text-align: left;
+        //line-height: 3rem;
+
+        span {
+          margin-top: 1rem;
+        }
+      }
+
+      .welcome-buttons {
+        max-width: 26rem;
+        flex-direction: row;
+
+        button {
+          margin: 0 auto;
+
+          &:nth-child(1) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 55rem) {
+  .home {
+    #home-overlay {
+      padding: 0;
+    }
+
+    section {
+      .welcome-buttons {
+        flex-direction: row;
+
+        button {
+          &:nth-child(1) {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &.add-vitamins {
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .home {
+    section {
+      h1 {
+      }
+
+      &.welcome {
+        .welcome-buttons {
+          width: 30rem;
+          max-width: 30rem;
+
+          button {
+            width: 45%;
+            max-width: 45%;
+            font-size: 1.15rem;
+          }
+        }
+      }
+
+      &.mobile-version {
+        h1 {
+          font-size: 2rem !important;
+        }
+      }
+    }
+
+    .welcome-buttons {
+      display: none;
+    }
+  }
+}

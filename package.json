@@ -1,0 +1,64 @@
+{
+  "name": "react-to-scss",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@kennethormandy/react-fittext": "^0.6.0",
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.2.1",
+    "antd": "^3.17.0",
+    "autoprefixer": "^9.5.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "clsx": "^1.0.4",
+    "expo-cli": "^3.4.0",
+    "lodash": "^4.17.11",
+    "material-ui": "^0.20.2",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
+    "my-simple-cookie": "^1.4.0",
+    "node-sass": "^4.12.0",
+    "object-assign": "^4.1.1",
+    "promise": "^8.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-fittext": "^1.0.0",
+    "react-live-clock": "^3.1.0",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "react-transition-group": "1.x",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^1.0.2",
+    "redux-thunk": "^2.3.0",
+    "resolve": "^1.10.1",
+    "url-loader": "^1.1.2",
+    "uuid": "^3.3.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
